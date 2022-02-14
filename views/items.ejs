@@ -1,0 +1,13 @@
+<%- include('header.ejs') -%>
+  
+    <% items1.forEach((item)=>{ %>
+    <form action="/apifilter" method="post">
+        <h3><%=item.name%></h3>
+        <img src="<%=item.url%>" height="50px"></img>
+        <input type="text" value="<%=item.name%>" name="name" hidden>
+        <input type="submit">
+    </form>
+      
+    <% }); %>
+   
+<%- include('footer.ejs') -%>

@@ -1,0 +1,9 @@
+<%- include('header.ejs',{errorMessage:''}) -%>
+    <form action="regsucc" method="post">
+        <label><%=errorMessage%></label>
+        <input name="username" placeholder="name">
+        <input name="password" placeholder="password">
+        <input type="submit">
+    </form>
+    
+<%- include('footer.ejs') -%>

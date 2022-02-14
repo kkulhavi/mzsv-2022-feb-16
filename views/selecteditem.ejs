@@ -1,0 +1,16 @@
+<%- include('header.ejs') -%>
+
+<% itemFilt.forEach((item)=>{ %>
+   
+        <h3><%=item.name%></h3>
+        <p><%=item.price%> kn</p>
+        <p><%=item.description%></p>
+        <p><%=item.category%></p>
+        <p><%=item.brand%></p>
+        <img src="<%=item.url%>" height="250px"></img>
+        
+    
+       
+        <% }); %>
+   
+<%- include('footer.ejs') -%>
